@@ -1,0 +1,76 @@
+# AI Business Analyst Agent
+
+An AI-powered business analytics backend built with **Python, Pandas, and FastAPI** that analyzes structured business datasets and generates automated business insights through REST APIs.
+
+## Features
+
+* Business analytics engine using Pandas
+* FastAPI REST API backend
+* Automated business insight generation
+* JSON API responses
+* Interactive Swagger API documentation
+* Modular architecture for future AI integration
+
+## Current Insights
+
+* Total Sales
+* Total Profit
+* Top Category
+* Top Region
+* Most Profitable Region
+
+## Tech Stack
+
+* Python
+* Pandas
+* FastAPI
+* Uvicorn
+
+## Project Structure
+
+```
+AI-Business-Analyst-Agent/
+│
+├── backend/
+│   ├── analyzer.py
+│   └── main.py
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+uvicorn backend.main:app --reload
+```
+
+Open:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+to access the interactive API documentation.
+
+## Current Output
+
+```json
+{
+  "total_sales": 2297200.86,
+  "top_category": "Technology",
+  "top_region": "West",
+  "total_profit": 286397.02,
+  "most_profitable_region": "West"
+}
+```
+
+## Future Enhancements
+
+* CSV Upload API
+* React Dashboard
+* AI-powered Business Insights
+* Natural Language Querying
+* Automatic Dataset Detection
